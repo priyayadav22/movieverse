@@ -24,7 +24,7 @@ const TopMovies = () => {
                     movieName={topmov.original_name ? topmov.original_name : topmov.original_title}
                     movieDescription={topmov.overview}
                     imbdRating={topmov.vote_average}
-                    link={`/movies/${movie.id}`}
+                    link={`/movies/${topmov.id}`}
                 />
             )}
         </div>
