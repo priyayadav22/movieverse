@@ -1,6 +1,6 @@
 "use client"
 
-import MovieCard from "@/components/MovieCard";
+import MovieCard from '../../components/MovieCard'
 import { useEffect, useState } from "react";
 
 export default function Trending_page() {
@@ -27,6 +27,7 @@ export default function Trending_page() {
                     movieName={movie.original_name ? movie.original_name : movie.original_title}
                     movieDescription={movie.overview}
                     imbdRating={movie.vote_average}
+                    link={`/movies/${movie.id}`}
                 />
             ))}
         </div>
